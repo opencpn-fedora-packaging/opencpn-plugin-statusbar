@@ -6,8 +6,8 @@
 
 Name: opencpn-plugin-%{plugin}
 Summary: Status bar plugin for OpenCPN
-Version: 0.0
-Release: 0.1.%{shortcommit}%{?dist}
+Version: 0.6.001
+Release: 1.%{shortcommit}%{?dist}
 License: GPLv2+
 
 Source0: https://github.com/%{owner}/%{project}/archive/%{commit}/%{project}-%{shortcommit}.tar.gz
@@ -20,8 +20,7 @@ BuildRequires: wxGTK3-devel
 BuildRequires: zlib-devel
 
 Requires: opencpn%{_isa}
-Supplements: opencpn%{_isa}
-Requires: opencpn-plugin-route%{_isa}
+Enhances: opencpn%{_isa}
 
 %description
 The built-in status bar in OpenCPN is very limited in its
